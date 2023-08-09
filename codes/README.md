@@ -4,7 +4,7 @@
 #### DDA
 
 | Variable | Definition | Key | 분석가 의견 |
-
+|-- | -- | -- | -- |
 | survival | Survival | 0 = No, 1 = Yes | 범주형, 확인 결과 데이터 타입이 결정됨. |
 | pclass | Ticket class | 1 = 1st, 2 = 2nd, 3 = 3rd | 범주형, 수치값으로 해석되지 않고 등급을 나타내기 때문, 객실 등급 별로 살아남은 사람들 분석가능  |
 | sex | Sex | | 남자 여자 별로 살아남은 사람 분석 가능 | 범주형, 수치값으로 해석되지 않고 등급을 나타내기 때문 |
@@ -19,6 +19,7 @@
 <summary>TypeOfContractChannel</summary>
 
 | Variable | Definition | Key | 분석가 의견 |
+|-- | -- | -- | -- |
 | id | 각 레코드의 고유 식별자 | --- | unique id의 경우 데이터로 사용 불가 판단 |
 | type_of_contract  | 계약 유형 | --- | 범주형(명목형), 각 계약 유형사이의 순서의 정보가 없음으로 명목형 |
 | type_of_contract2| 다른 유형의 계약| --- | 범주형(명목형), 명확한 순서가 나타나있지 않기때문에 명목형 |
