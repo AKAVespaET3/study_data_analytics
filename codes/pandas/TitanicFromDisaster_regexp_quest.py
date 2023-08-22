@@ -8,9 +8,10 @@ df_Name = pd.DataFrame(df_Name)
 print(df_Name)
 
 pattern = r'^([A-Za-z]+)'
-df_Name_extract = df_Name['Name'].str.extract(pattern)
+df_Name['FirstName'] = df_Name['Name'].str.extract(pattern)
 
-print(df_Name_extract)
+print(df_Name['FirstName'])
+
              
 # 0       Braund
 # 1      Cumings
@@ -29,11 +30,11 @@ df_Name_extract.isnull().sum()
 # 결혼여부
 
 pattern_1 = r', ([A-Za-z]+)\.'
-df_Name_extract = df_Name['Name'].str.extract(pattern_1)
+df_Name['Married'] = df_Name['Name'].str.extract(pattern_1)
 
-print(df_Name_extract)
+print(df_Name['Married'])
 
-df_Name_extract.value_counts()
+df_Name['Married'].value_counts()
 
 # Mr          517
 # Miss        182
