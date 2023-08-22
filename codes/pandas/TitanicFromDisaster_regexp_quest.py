@@ -8,47 +8,29 @@ df_Name = pd.DataFrame(df_Name)
 print(df_Name)
 
 pattern = r'^([A-Za-z]+)'
-df_Name['FirstName'] = df_Name['Name'].str.extract(pattern)
+df_Name['FirstName'] = df_Name['Name'].str.extract(pattern).copy()
 
 print(df_Name['FirstName'])
 
-             
-# 0       Braund
-# 1      Cumings
-# 2    Heikkinen
-# 3     Futrelle
-# 4        Allen
-# ..         ...
-# 886   Montvila
-# 887     Graham
-# 888   Johnston
-# 889       Behr
-# 890     Dooley
-
-df_Name_extract.isnull().sum()
-
 # 결혼여부
 
-pattern_1 = r', ([A-Za-z]+)\.'
-df_Name['Married'] = df_Name['Name'].str.extract(pattern_1)
-
+pattern_1 = r'(Mrs?)'
+df_Name['Married'] = df_Name['Name'].str.extract(pattern_1).copy()
 print(df_Name['Married'])
+df_Name.dropna()
+df_Name
+#                                                   Name FirstName Married
+# 0                              Braund, Mr. Owen Harris    Braund      Mr
+# 1    Cumings, Mrs. John Bradley (Florence Briggs Th...   Cumings     Mrs
+# 3         Futrelle, Mrs. Jacques Heath (Lily May Peel)  Futrelle     Mrs
+# 4                             Allen, Mr. William Henry     Allen      Mr
+# 5                                     Moran, Mr. James     Moran      Mr
+# ..                                                 ...       ...     ...
+# 883                      Banfield, Mr. Frederick James  Banfield      Mr
+# 884                             Sutehall, Mr. Henry Jr  Sutehall      Mr
+# 885               Rice, Mrs. William (Margaret Norton)      Rice     Mrs
+# 889                              Behr, Mr. Karl Howell      Behr      Mr
+# 890                                Dooley, Mr. Patrick    Dooley      Mr
 
-df_Name['Married'].value_counts()
+# [647 rows x 3 columns]
 
-# Mr          517
-# Miss        182
-# Mrs         125
-# Master       40
-# Dr            7
-# Rev           6
-# Col           2
-# Major         2
-# Mlle          2
-# Capt          1
-# Don           1
-# Jonkheer      1
-# Lady          1
-# Mme           1
-# Ms            1
-# Sir           1
