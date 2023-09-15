@@ -22,7 +22,7 @@
 
 <details >
 <summary>Type Of Contract Channel_계약 유형 채널</summary>
-from dataset : https://blog.naver.com/data_station/222493245799
+refer : https://blog.naver.com/data_station/222493245799
 
 ### DDA 분석
 | Variable |Definition | Key | 데이터 분류   | 분석가 의견 |
@@ -119,8 +119,7 @@ src="https://img.shields.io/badge/Google Cloud-4285F4?style=for-the-badge&logo=G
 | 제목 | 작성소스 | 설명 | 
 |---|---|---|
 | wordcloud | [wordcloud](./codes/NLP/wordcloud_simple.ipynb) | 기본 자연어 처리 | | 
-| wordcloud_regexp | [wordcloud_regexp](./codes/NLP/wordcloud_simple_regexp.ipynb) |Regex을 이용하여 글자 전처리 | | 
-| wordcloud_regexp | [wordcloud_regexp](./codes/NLP/wordcloud_simple_regexp.ipynb) |Regex을 이용하여 글자 전처리 | | 
+| wordcloud_regexp | [wordcloud_regexp](./codes/NLP/wordCloud_regex.ipynb) |Regex을 이용하여 글자 전처리 | | 
 | 한글 형태소 분석기 | [morpheme_analyzer](./codes/NLP/morpheme_analyzer.ipynb) |한글 형태소 분석기 Okt | |
 | withmecab | [withmecab](./codes/NLP/wordcloudwithmecab.ipynb) | withmecab | |
 | tokenizers | [tokenizers](./codes/NLP/tokenizers.ipynb) | 불용어 처리 | 
